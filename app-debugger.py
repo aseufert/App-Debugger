@@ -1,12 +1,5 @@
 #! /usr/bin/env python3
 
-'''
-    APP DEBUGGER
-    Created by Alex Seufert
-    https://github.com/aseufert
-    Requires Python 3.6
-'''
-
 
 import sys
 import re
