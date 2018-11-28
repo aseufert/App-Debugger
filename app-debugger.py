@@ -1,6 +1,5 @@
 #! /usr/bin/env python3
 
-
 import sys
 import re
 import os
@@ -102,14 +101,11 @@ try:
                 else:
                     break
 
-            except (KeyboardInterrupt, EOFError):
+            except KeyboardInterrupt:
                 print('\nClosing the Debugger...')
-                break
                 sys.exit()
-            except:
-                print('Unknown Error - Debugger will continue...')
-                traceback.print_exc()
-                print('End of error...')
+            except Exception as e:
+                print(e)
                 continue
 
 except (KeyboardInterrupt, EOFError):
